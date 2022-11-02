@@ -1,4 +1,17 @@
+@import './utils/mixins';
+
 nav {
-	background-color: $primary;
-	height: 3rem;
+	@include flex;
+	background-color: rgba(116, 146, 230, 0.377);
+	justify-content: space-between;
+	height: 4rem;
+	padding-inline: 3rem;
+}
+ul {
+	@include flex-center;
+	gap: 2rem;
+	list-style: none;
+}
+a {
+	text-decoration: none;
 }

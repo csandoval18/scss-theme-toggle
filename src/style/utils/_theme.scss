@@ -1,33 +1,20 @@
 @import './colors';
-
 .light {
-	p,
-	h1,
-	h2,
-	h3,
-	h5,
-	h6,
-	span {
+	* {
 		color: $text-light;
 	}
-	body,
 	& {
 		background-color: $bg-light;
+		min-height: 100vh;
 	}
 }
-
 .dark {
-	p,
-	h1,
-	h2,
-	h3,
-	h5,
-	h6,
-	span {
+	* {
 		color: $text-dark;
 	}
 	body,
 	& {
 		background-color: $bg-dark;
+		min-height: 100vh;
 	}
 }
