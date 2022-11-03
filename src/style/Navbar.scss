@@ -5,7 +5,12 @@ nav {
 	background-color: rgba(116, 146, 230, 0.377);
 	justify-content: space-between;
 	height: 4rem;
+	left: 0;
 	padding-inline: 3rem;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 1000;
 }
 ul {
 	@include flex-center;

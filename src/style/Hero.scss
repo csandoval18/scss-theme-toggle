@@ -6,3 +6,15 @@
 	display: flex;
 	justify-content: center;
 }
+@mixin bg {
+	background-position: center center;
+	background-size: cover;
+}
+.slide-1 {
+	@include bg;
+	background-image: url(../assets/hero.jpg);
+}
+.slide-2 {
+	@include bg;
+	background-image: url(../assets/hero2.jpg);
+}

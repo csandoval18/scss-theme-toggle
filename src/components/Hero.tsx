@@ -22,10 +22,10 @@ const Hero: React.FC<HeroSwiperProps> = () => {
         modules={[Pagination, Navigation, Autoplay]}
         className="hero-swiper"
       >
-        <SwiperSlide className="slide">Slide 1</SwiperSlide>
-        <SwiperSlide className="slide">Slide 2</SwiperSlide>
-        <SwiperSlide className="slide">Slide 3</SwiperSlide>
-        <SwiperSlide className="slide">Slide 4</SwiperSlide>
+        <SwiperSlide className="slide slide-1">Slide 1</SwiperSlide>
+        <SwiperSlide className="slide slide-2">Slide 2</SwiperSlide>
+        <SwiperSlide className="slide slide-3">Slide 3</SwiperSlide>
+        <SwiperSlide className="slide slide-4">Slide 4</SwiperSlide>
       </Swiper>
     </div>
   )
