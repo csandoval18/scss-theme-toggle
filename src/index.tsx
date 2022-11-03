@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import { ThemeProvider } from "./context/ThemeContext"
 import reportWebVitals from './reportWebVitals'
 import './style/utils/_main.scss'
 import './style/utils/_theme.scss'
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(
 )
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 )
 

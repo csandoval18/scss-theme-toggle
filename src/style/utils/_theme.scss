@@ -1,4 +1,15 @@
-@import './colors';
+@import './variables';
+
+@mixin theme($light-theme: true) {
+	@if $light-theme {
+		* {
+			color: $text-light;
+		}
+		& {
+			background-color: $bg-light;
+		}
+	}
+}
 .light {
 	* {
 		color: $text-light;
@@ -6,6 +17,11 @@
 	& {
 		background-color: $bg-light;
 		min-height: 100vh;
+	}
+	.btn {
+		height: 2rem;
+	}
+	.btn-primary {
 	}
 }
 .dark {
@@ -16,5 +32,10 @@
 	& {
 		background-color: $bg-dark;
 		min-height: 100vh;
+	}
+	.btn {
+		height: 2rem;
+	}
+	.btn-primary {
 	}
 }
