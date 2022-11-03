@@ -1,7 +1,7 @@
-import { useContext, useState } from 'react'
-import { ThemeContext } from './context/ThemeContext'
+import { useContext } from 'react'
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
+import { ThemeContext } from './context/ThemeContext'
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext)
