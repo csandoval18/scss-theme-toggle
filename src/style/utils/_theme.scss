@@ -1,15 +1,15 @@
 @import './variables';
 
-@mixin theme($light-theme: true) {
-	@if $light-theme {
-		* {
-			color: $text-light;
-		}
-		& {
-			background-color: $bg-light;
-		}
-	}
-}
+// @mixin theme($light-theme: true) {
+// 	@if $light-theme {
+// 		* {
+// 			color: $text-light;
+// 		}
+// 		& {
+// 			background-color: $bg-light;
+// 		}
+// 	}
+// }
 .light {
 	* {
 		color: $text-light;

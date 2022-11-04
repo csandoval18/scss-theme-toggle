@@ -1,16 +1,21 @@
 @import './utils/mixins';
+@import './utils/variables';
 
 nav {
-	@include flex;
-	background-color: rgba(116, 146, 230, 0.377);
-	justify-content: space-between;
+	// background-color: rgba(116, 146, 230, 0.377);
+	background-color: rgba(0, 0, 0, 0.616);
 	height: 4rem;
-	left: 0;
-	padding-inline: 3rem;
 	position: fixed;
-	top: 0;
-	width: 100vw;
+	width: 100%;
 	z-index: 1000;
+}
+.nav-container {
+	@include flex;
+	justify-content: space-between;
+	padding-inline: 3rem;
+}
+.logo {
+	color: $white;
 }
 ul {
 	@include flex-center;

@@ -1,20 +1,30 @@
 import React from 'react'
 import '../style/Navbar.scss'
 
-interface NavbarProps { }
+interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = () => {
-  return (
-    <nav>
-      <div>CAS</div>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#"></a>Resume</li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  )
+	return (
+		<nav>
+			<div className='nav-container'>
+				<div className='logo'>CAS</div>
+				<ul>
+					<li>
+						<a href='#'>About</a>
+					</li>
+					<li>
+						<a href='#'>Resume</a>
+					</li>
+					<li>
+						<a href='#'>Portfolio</a>
+					</li>
+					<li>
+						<a href='#'>Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	)
 }
 
 export default Navbar
